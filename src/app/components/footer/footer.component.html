@@ -1,0 +1,26 @@
+<div class="footerLqx navbar navbar-default navbar-fixed-bottom" role="navigation">
+  <ul class="footerUl nav navbar-nav">
+    <li>
+      <a (touchend)="goMessage()">
+        <span class="glyphicon glyphicon-home"></span>
+        <span>消息</span>
+      </a>
+    </li>
+    <li>
+      <a (touchend)="goEquipment()">
+        <span class="glyphicon glyphicon-th-large"></span>
+        <span>设备</span>
+      </a>
+    </li>
+  </ul>
+</div>
+<div [class.maskNone]="maskStatus == 1"class="mask">
+  <div class="deleteDialog">
+    <div class="verMass">亲，还没登录哦！去登录？</div>
+    <div class="verBtn">
+      <span class="cancelBtn" (click)="cancelMask()">取消</span>
+      <span  (click)="goLogin()">确定</span>
+    </div>
+  </div>
+
+</div>

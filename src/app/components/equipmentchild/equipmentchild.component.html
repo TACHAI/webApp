@@ -1,0 +1,10 @@
+<div el-container>
+  <div *ngFor="let obj of xx;let idx = index;trackBy:xx">
+    <div class="pt" *ngIf="xx">
+      <i class="circle" [class.actived]="xx.indexOf(idx)>-1" (click)="goDevice(idx)"></i>
+    </div>
+    <div>
+      <img [src]="obj.xximg" />
+    </div>
+  </div>
+</div>
